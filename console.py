@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""Class Airbnb command's"""
+"""
+Class Airbnb command's
+"""
 import cmd
 import sys
 
@@ -13,16 +15,12 @@ from models.place import Place
 from models.review import Review
 import models
 
-classGpo = {"Amenity": Amenity,
-			"BaseModel": BaseModel,
-			"City": City,
-			"Place": Place,
-			"Review": Review,
-			"State": State,
-			"User": User}
+classGpo = {"Amenity": Amenity, "BaseModel": BaseModel, "City": City, "Place": Place, "Review": Review, "State": State, "User": User}
 
 class HBNBCommand(cmd.Cmd):
-	""""Class Airbnb (Hbnb)"""
+	""""
+	Class Airbnb (Hbnb)
+	"""
 	prompt = '(Hbnb)'
 	file = None
 
@@ -65,6 +63,10 @@ class HBNBCommand(cmd.Cmd):
 		else:
 			print("** Clase no existe**")
     
-
+def help_quit(self, line):
+		print("""Quit the Program - command quit""")
+		
+	def help_EOF(self, line):
+		print("""Exit the Program - command End of File""")
 if __name__ == '__main__' :
 	HBNBCommand().cmdloop()
