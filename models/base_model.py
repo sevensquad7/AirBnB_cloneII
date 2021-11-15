@@ -2,7 +2,9 @@
 """Class Base_Model"""
 from datetime import datetime, time
 import uuid
+import models
 time = "%Y-%m-%dT%H:%M:%S.%f"
+
 
 class BaseModel:
     """Date BaseModel"""
@@ -18,6 +20,7 @@ class BaseModel:
             self.id = str(uuid.uuid4())
             self.created_at = datetime.now()
             self.updated_at = self.created_at
+            models.storage.new(self)
 
     def __str__(self):
         """clase de representacion del basemodel"""
@@ -26,6 +29,7 @@ class BaseModel:
     def save(self):
         """Actualizar los atributos con datetime"""
         self.updated_at = datetime.now()
+        models.storage.save()
 
     def to_dict(self):
         """return all content of the diccionary to keys and values"""
