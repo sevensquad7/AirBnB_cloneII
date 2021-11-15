@@ -1,6 +1,6 @@
 # AirBnB clone - The console
 
-![HNBN](https://github.com/zye7ert/AirBnB_clone/picture/HBNB-HolbertonAirbnb.png)
+![HNBN](https://github.com/zye7ertAirBnB_clone/blob/main/picture/HBNB-HolbertonAirbnb.png)
 
 ## First step and GOAl of this repository: Write a command interpreter to manage your AirBnB objects.
 
@@ -76,7 +76,7 @@ $
 All tests should also pass in non-interactive mode:
 `$ echo "python3 -m unittest discover tests" | bash`
 
-![HNBN](https://github.com/zye7ert/AirBnB_clone/picture/SERVERSIDE.png)
+![HNBN](https://github.com/zye7ert/AirBnB_clone/blob/main/picture/SERVERSIDE.png)
 
 
 ### Authors
