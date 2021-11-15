@@ -32,7 +32,39 @@ class HBNBCommand(cmd.Cmd):
 	def do_EOF(self, line):
 		"""Exit the Program - command End of File"""
 		return True
-	
+	def emptyline(self):
+		return False
+	def do_create(self, arg):
+     	#reacion de nuevas instancias de la clase
+     	args = arg.split()
+     	if len(args) == 0:
+         	print("**Nombre de la clase perdido")
+         	return False
+     	if args[0] in classes:
+         	instance = eval(args[0])()
+    	else:
+        	print("**La clase no existe")
+        	return False
+    	print(instance.id)
+    		instance.save()
+     def do_show(self,arg):
+#Imprimir las instacias en base cadennna en la clase y ID
+		args = arg.split()
+		if len(args) == 0:
+			print("** nombre de la clase perdido")
+			return False
+		if args[0] in classes:
+			if len(args) > 1:
+				key = arg[0] + "." + args[1]
+				if key in models.storage.all():
+					print(models.storage.all()[key])
+				else:
+					print("** No funciona la instancia**")
+			else:
+				print("** Instancia perdida **")
+		else:
+			print("** Clase no existe**")
+    
 
 if __name__ == '__main__' :
 	HBNBCommand().cmdloop()
