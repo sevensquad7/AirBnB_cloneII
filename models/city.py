@@ -2,6 +2,7 @@
 """Class City"""
 from models.base_model import BaseModel
 
+
 class City(BaseModel):
     """Data City"""
     state_id = ''

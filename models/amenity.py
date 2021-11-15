@@ -2,6 +2,7 @@
 """Class Amenity"""
 from models.base_model import BaseModel
 
+
 class Amenity(BaseModel):
     """Data Amenity"""
     name = ''

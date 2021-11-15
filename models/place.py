@@ -2,6 +2,7 @@
 """Class Place"""
 from models.base_model import BaseModel
 
+
 class Place(BaseModel):
     """Data Place"""
     city_id = ''
