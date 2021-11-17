@@ -1,8 +1,8 @@
-# 0x00. AirBnB clone - The console :house_with_garden:
+# 0x00. AirBnB clone - The console
 
- ![HNBN](https://github.com/nitaly31/AirBnB_clone/blob/master/picture/HBNB-HolbertonAirbnb.png)
+ ![HNBN](https://github.com/zye7ert/AirBnB_clone/blob/master/picture/HBNB-HolbertonAirbnb.png)
 
-### 📝 Descripción
+### Descripción
 ***
 __Airbnb__ is an online platform that connects people who have a home to offer, with people who need a place to stay temporarily.
 
@@ -20,7 +20,7 @@ Phases of the AirBnB clone project:
 6. REST API
 7. Web dynamic
 
-### 📋 Requirements
+### Requirements
 ***
 #### Python Scripts
 
@@ -37,11 +37,11 @@ Phases of the AirBnB clone project:
 * All your test files and folders should start by `test_`.
 * All your tests should be executed by using this command: `python3 -m unittest discover tests`.
 
-### 🎨 Style
+### Style
 ***
 * Code should use the PEP 8 style (version 2.7.*).
 
-### 🎯 Repository Projects
+### Repository Projects
 ***
 #### Tasks:
 | Files | Description |
@@ -74,16 +74,16 @@ Phases of the AirBnB clone project:
 | [`tests/test_models`]() | Folder containing all unit test files in the `models` folder. |
 | [`tests/test_models/test_engine`]() | Folder containing all unit test files in the `engine` subfolder. |
 
-### :computer: Console
+### Console
 ***
-#### Description of the command interpreter :clipboard:
+#### Description of the command interpreter 
 
 the console contains the entry point of the command interpreter.
 
-### 🛠️ Installation
+### Installation
 ***
 1. Clone this repository:
-`https://github.com/nitaly31/AirBnB_clone.git`
+`https://github.com/zye7ert/AirBnB_clone.git`
 2. Access AirBnb directory:
 `cd AirBnB_clone`
 3. Run hbnb(interactively)
@@ -106,7 +106,7 @@ root@c698ec171c6e:/home/AirBnB_clone# ./console
 | `quit` and `EOF`| To exit the program. |
 | `help` | Shows the commands that can be used in the console. |
 
-### 🧪 Testing
+### Testing
 ***
 
 ```bash
@@ -148,7 +148,7 @@ $
 (hbnb)
 ```
 
-### :black_nib: Authors
+### Authors
 ***
 *Holberton School Students*
 
