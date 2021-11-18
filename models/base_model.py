@@ -36,7 +36,9 @@ class BaseModel:
     def to_dict(self):
         """return all content of the diccionary to keys and values"""
         new_dict = self-__dict__.copy()
-        new_dict["created_at"] = new_dict["created_at"].strftime(time)
-        new_dict["updated_at"] = new_dict["updated_at"].strftime(time)
+        if "created_at" in new_dict:
+            new_dict["created_at"] = new_dict["created_at"].strftime(time)
+        if "update_at" in new_dict:
+            new_dict["update_at"] = new_dict["update_at"].strftime(time)
         new_dict["__class__"] = self.__class__.__name__
         return new_dict
